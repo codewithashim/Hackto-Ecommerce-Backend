@@ -1,0 +1,18 @@
+[
+  {
+    "productName": "MacBook Air 2023",
+    "productPrice": "180000",
+    "productDescription": "This is the description of the product MacBook Air 2023",
+    "productImage": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1664472289661",
+    "productCategory": "Laptops",
+    "productSeller": "Ashim",
+    "productReviews": [
+        {
+            "reviewerName": "Ashim",
+            "reviewerEmail": "Joss",
+            "reviewerRating": 5,
+            "reviewerComment": "This is a comment"
+        }
+    ]
+  }
+]

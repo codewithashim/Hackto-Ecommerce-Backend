@@ -1,0 +1,922 @@
+{
+	"info": {
+		"_postman_id": "6307918d-7513-4042-946e-3b9bba012739",
+		"name": "Hekto Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19459280"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"ashim@gmail.com\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"ashim@gmail.com\",\n    \"password\": \"123456\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "325"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"145-2sT8FWCdF/dm6Nm7E+YzZT4siZ4\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 18 May 2023 21:28:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Login successful\",\n    \"sucess\": true,\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDY2OTRhNTkzMmY2NzYyN2JkMTM4ZTkiLCJlbWFpbCI6ImFzaGltQGdtYWlsLmNvbSIsImlhdCI6MTY4NDQ0NTI4OSwiZXhwIjoxNjg0NDQ4ODg5fQ.OBP7psMJ6Lmu20xCQPRTrP3eVHzDkWwrBwSg4P10sO8\",\n        \"userId\": \"646694a5932f67627bd138e9\",\n        \"role\": \"user\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Ashim Rudra Paul\",\n    \"email\":\"ashim@gmail2.com\",\n    \"phone\":\"01740546244\",\n    \"password\":\"123456\",\n    \"role\": \"user\",\n    \"isVerified\": false\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Ashim Rudra Paul\",\n    \"email\":\"ashim@gmail2.com\",\n    \"phone\":\"01740546244\",\n    \"password\":\"123456\",\n    \"role\": \"user\",\n    \"isVerified\": false\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "283"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"11b-dGehv0/sjpYqc9YL5ImNArive/w\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 18 May 2023 21:14:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Registration successful\",\n    \"data\": {\n        \"name\": \"Ashim Rudra Paul\",\n        \"email\": \"ashim@gmail2.com\",\n        \"phone\": \"01740546244\",\n        \"password\": \"$2b$10$aZCEHZ4fOWcK/KGWCo3xfuc3WsWkAyrb0tw1nxiMiAnzY9hMYrXmq\",\n        \"role\": \"user\",\n        \"isVerified\": false,\n        \"_id\": \"646695397ba8fba9beb1072b\",\n        \"__v\": 0\n    },\n    \"sucess\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All User",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/user",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "468"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1d4-0q0pE2HXlNsoiBTFBVbvTgdj690\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 18 May 2023 21:15:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"All users fetched successfully\",\n    \"sucess\": true,\n    \"data\": [\n        {\n            \"_id\": \"646694a5932f67627bd138e9\",\n            \"email\": \"ashim@gmail.com\",\n            \"password\": \"$2b$10$ttXJ.H4S8BoRNN4tm/Yk3u1q44feEcMGdsRGoQfkxLs3L23NFdD9e\",\n            \"role\": \"user\",\n            \"isVerified\": false,\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"646695397ba8fba9beb1072b\",\n            \"name\": \"Ashim Rudra Paul\",\n            \"email\": \"ashim@gmail2.com\",\n            \"phone\": \"01740546244\",\n            \"password\": \"$2b$10$aZCEHZ4fOWcK/KGWCo3xfuc3WsWkAyrb0tw1nxiMiAnzY9hMYrXmq\",\n            \"role\": \"user\",\n            \"isVerified\": false,\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/luser/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"luser",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/update-user/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"update-user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user-delete/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user-delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/change-password/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"change-password",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verified User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/verify-user/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"verify-user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change User Role",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/role/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"role",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Admins",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/admin/:email",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								":email"
+							],
+							"variable": [
+								{
+									"key": "email",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Seller",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/seller/:email",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"seller",
+								":email"
+							],
+							"variable": [
+								{
+									"key": "email",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "AddProduct",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\n    \"productName\": \"MacBook Air 2023\",\n    \"productPrice\": \"180000\",\n    \"productDescription\": \"This is the description of the product MacBook Air 2023\",\n    \"productImage\": \"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1664472289661\",\n    \"productCategory\": \"Laptops\",\n    \"productSeller\": \"Ashim\",\n    \"productReviews\": [\n        {\n            \"reviewerName\": \"Ashim\",\n            \"reviewerEmail\": \"Joss\",\n            \"reviewerRating\": 5,\n            \"reviewerComment\": \"This is a comment\"\n        }\n    ]\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hekto-backend.vercel.app/api/v1/add-product",
+							"protocol": "https",
+							"host": [
+								"hekto-backend",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"add-product"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AddProduct",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\n    \"productName\": \"MacBook Air 2023\",\n    \"productPrice\": \"180000\",\n    \"productDescription\": \"This is the description of the product MacBook Air 2023\",\n    \"productImage\": \"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1664472289661\",\n    \"productCategory\": \"Laptops\",\n    \"productSeller\": \"Ashim\",\n    \"productReviews\": [\n        {\n            \"reviewerName\": \"Ashim\",\n            \"reviewerEmail\": \"Joss\",\n            \"reviewerRating\": 5,\n            \"reviewerComment\": \"This is a comment\"\n        }\n    ]\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/add-product",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"add-product"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "585"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"249-Sid07Fmca2UPNSm1nOLUzndadI0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 May 2023 19:41:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product added successfully\",\n    \"sucess\": true,\n    \"data\": {\n        \"productName\": \"MacBook Air 2023\",\n        \"productPrice\": 180000,\n        \"productDescription\": \"This is the description of the product MacBook Air 2023\",\n        \"productImage\": \"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1664472289661\",\n        \"productCategory\": \"Laptops\",\n        \"productSeller\": \"Ashim\",\n        \"productReviews\": [\n            {\n                \"reviewerName\": \"Ashim\",\n                \"reviewerEmail\": \"Joss\",\n                \"reviewerRating\": 5,\n                \"reviewerComment\": \"This is a comment\"\n            }\n        ],\n        \"_id\": \"6469225eecaae823cff20b8d\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://hekto-backend.vercel.app/api/v1/product",
+							"protocol": "https",
+							"host": [
+								"hekto-backend",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://hekto-backend.vercel.app/api/v1/product/:id",
+							"protocol": "https",
+							"host": [
+								"hekto-backend",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://hekto-backend.vercel.app/api/v1/update-product/:id",
+							"protocol": "https",
+							"host": [
+								"hekto-backend",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"update-product",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://hekto-backend.vercel.app/api/v1/delete-product/:id",
+							"protocol": "https",
+							"host": [
+								"hekto-backend",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delete-product",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Give Revews",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n                \"reviewerName\": \"Ashim Rudra Paul\",\n                \"reviewerEmail\": \"Joss 4554\",\n                \"reviewerRating\": 5,\n                \"reviewerComment\": \"This is a comment 11\"\n            }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hekto-backend.vercel.app/api/v1/product/6469225eecaae823cff20b8d/revews",
+							"protocol": "https",
+							"host": [
+								"hekto-backend",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"6469225eecaae823cff20b8d",
+								"revews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add To Card",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product/6469225eecaae823cff20b8d/add-to-cart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"6469225eecaae823cff20b8d",
+								"add-to-cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add To Faverete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product/6469225eecaae823cff20b8d/add-to-favorites",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"6469225eecaae823cff20b8d",
+								"add-to-favorites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Card",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product/6469225eecaae823cff20b8d/remove-from-cart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"6469225eecaae823cff20b8d",
+								"remove-from-cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Faverate",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product/6469225eecaae823cff20b8d/remove-from-favorites",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"6469225eecaae823cff20b8d",
+								"remove-from-favorites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Card By Email",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/cart/:email",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"cart",
+								":email"
+							],
+							"variable": [
+								{
+									"key": "email",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Favearte  By  Email",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/favorites/:email",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"favorites",
+								":email"
+							],
+							"variable": [
+								{
+									"key": "email",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
